@@ -1,0 +1,13 @@
+def rearrange(n,arr) :
+	j = 0
+	for i in range(0, arr) :
+		if (n[i] > 0) :
+			temp = n[i]
+			n[i] = n[j]
+			n[j]= temp
+			j = j + 1
+	print(n)
+# Driver code
+n= [-1, 2, -3, 4, 5, 6, -7, 8, 9]
+arr= len(n)
+rearrange(n,arr)
